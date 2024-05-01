@@ -1,8 +1,9 @@
 import Input from './components/Input';
 import Button from './components/Button';
 import {Container,Content, Row, Column} from './styles';
+
 import { useState } from 'react';
-const App = () => {
+const Calculadora = () => {
   const [currentNumber, setCurrentNumber] = useState('0');
   const [firstNumber, setfirstNumber] = useState('0');
   const[operation,setOperation] = useState('');
@@ -55,6 +56,7 @@ const App = () => {
   }
   return (
     <Container>
+      
       <Content>
       <Input value={currentNumber}/>
         <Row>
@@ -93,4 +95,4 @@ const App = () => {
   )
 };
 
-export default App;
+export default Calculadora;
